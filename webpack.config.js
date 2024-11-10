@@ -13,7 +13,7 @@ export default (env) => {
   return {
     mode: env.mode ?? "development",
     entry: {
-      main: ["@babel/polyfill", path.resolve(__dirname, "./src/homepage/index-entry.js")],
+      main: ["@babel/polyfill", path.resolve(__dirname, "./src/homepage/index.js")],
       // second: ["@babel/polyfill", path.resolve(__dirname, "./src/second/second-entry.js")],
     },
     plugins: [

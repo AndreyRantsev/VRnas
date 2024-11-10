@@ -1,0 +1,23 @@
+@import "~normalize.css";
+@import "./vars.scss";
+
+body {
+    background: $black100;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.wave-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.wave-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

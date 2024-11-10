@@ -20,7 +20,7 @@
     ]
   },
   "keywords": [],
-  "author": "Pivnenko Anton",
+  "author": "katzzz3n",
   "devDependencies": {
     "@babel/core": "^7.24.7",
     "@babel/preset-env": "^7.24.7",
@@ -54,6 +54,7 @@
     "ajv": "^8.16.0",
     "ajv-keywords": "^5.1.0",
     "gsap": "^3.12.5",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "or": "^0.2.0"
   }
 }
