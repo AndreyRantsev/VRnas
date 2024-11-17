@@ -1,0 +1,39 @@
+@use "./vars.scss";
+
+.header {
+    &__content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 31px 0;
+    }
+}
+
+.logo {
+    &__pic {
+    }
+}
+
+.menu {
+    &__item {
+    }
+
+    &__list {
+        display: flex;
+        gap: 64px;
+    }
+}
+
+.anchor-link {
+    color: vars.$white;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: "Chakra Petch", sans-serif;
+    &--submenu {
+    }
+}
+
+.sublist {
+    &__item {
+    }
+}

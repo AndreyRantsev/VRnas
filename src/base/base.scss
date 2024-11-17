@@ -1,13 +1,45 @@
-@import "~normalize.css";
-@import "./vars.scss";
+@use "~normalize.css" as normilize;
+@use "./vars.scss";
+@use "./header.scss";
+@use "./elements.scss";
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 body {
-    background: $black100;
+    background: vars.$black100;
+    font-family: "Chakra Petch", sans-serif;
+}
+
+.container {
+    max-width: 1247px;
+    margin: 0 auto;
 }
 
 img {
     max-width: 100%;
     height: auto;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+button {
+    background: none;
+    border: none;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+*,
+* > * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 .wave-top {
