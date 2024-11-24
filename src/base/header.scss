@@ -16,6 +16,7 @@
 
 .menu {
     &__item {
+        position: relative;
     }
 
     &__list {
@@ -34,6 +35,23 @@
 }
 
 .sublist {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    background-color: vars.$black50;
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(90deg, #636366 0%, #18181b 100%);
+    border-image-slice: 1;
     &__item {
     }
+}
+
+.sublist-container {
+    overflow: hidden;
+    position: absolute;
+    bottom: -160px;
+    left: 0;
 }
