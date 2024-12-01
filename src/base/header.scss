@@ -17,6 +17,15 @@
 .menu {
     &__item {
         position: relative;
+
+        &.active {
+            .sublist-container--page,
+            .sublist-container--blog {
+                .sublist {
+                    transform: translateY(0);
+                }
+            }
+        }
     }
 
     &__list {
@@ -26,11 +35,26 @@
 }
 
 .anchor-link {
+    cursor: pointer;
     color: vars.$grey2;
     font-size: 16px;
     font-weight: 500;
     font-family: "Chakra Petch", sans-serif;
     &--submenu {
+        position: relative;
+        &:after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -16px;
+            width: 12px;
+            height: 12px;
+            background-image: url(../img/icons/arrow.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+        }
     }
 }
 
@@ -68,12 +92,5 @@
     &--blog {
         bottom: -120px;
         height: 114px;
-    }
-
-    &--page.active,
-    &--blog.active {
-        .sublist {
-            transform: translateY(0);
-        }
     }
 }
