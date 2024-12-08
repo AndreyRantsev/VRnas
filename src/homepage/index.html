@@ -8,7 +8,7 @@
 <body>
     <img class="wave-top" src="../img/wave_top.png" alt="">
     <img class="wave-bottom" src="../img/wave_bottom.png" alt="">
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header__content">
                 <a href="" class="logo">
@@ -25,9 +25,9 @@
                         <li class="menu__item">
                             <a href="" class="anchor-link">Service</a>
                         </li>
-                        <li class="menu__item">
-                            <button class="anchor-link anchor-link--submenu">Page</button>
-                            <div class="sublist-container sublist-container--page active">
+                        <li class="menu__item" data-menu-item>
+                            <button class="anchor-link anchor-link--submenu" data-sublist-button>Page</button>
+                            <div class="sublist-container sublist-container--page">
                                 <ul class="sublist">
                                     <li class="sublist__item"><a href="" class="anchor-link">Pricing Plan</a></li>
                                     <li class="sublist__item"><a href="" class="anchor-link">FAQ</a></li>
@@ -36,9 +36,9 @@
                                 </ul>
                             </div>
                         </li>
-                        <li class="menu__item">
-                            <button class="anchor-link anchor-link--submenu">Blog</button>
-                            <div class="sublist-container sublist-container--blog active">
+                        <li class="menu__item" data-menu-item>
+                            <button class="anchor-link anchor-link--submenu" data-sublist-button>Blog</button>
+                            <div class="sublist-container sublist-container--blog">
                                 <ul class="sublist">
                                     <li class="sublist__item"><a href="" class="anchor-link">Recent articles</a></li>
                                     <li class="sublist__item"><a href="" class="anchor-link">Our Team</a></li>
