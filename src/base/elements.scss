@@ -25,6 +25,11 @@
             opacity: 1;
         }
     }
+    @media (max-width: 478px) {
+        &--desktop {
+            display: none;
+        }
+    }
 }
 .gradient-border-transparent-link__text {
     position: relative;
