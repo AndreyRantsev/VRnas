@@ -132,6 +132,7 @@
         width: 16px;
         height: 2px;
         background-color: vars.$white;
+        transition: 0.6s;
 
         &::after,
         &::before {
@@ -140,6 +141,7 @@
             background-color: vars.$white;
             position: absolute;
             right: 0;
+            transition: 0.6s;
         }
 
         &::before {
@@ -155,5 +157,22 @@
 
     @media (max-width: 768px) {
         display: block;
+    }
+}
+
+.burger.active {
+    .burger__line {
+        width: 0;
+
+        &::before {
+            transform: rotate(-45deg);
+            top: 0;
+        }
+
+        &::after {
+            width: 20px;
+            transform: rotate(45deg);
+            bottom: 0;
+        }
     }
 }
