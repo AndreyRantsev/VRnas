@@ -7,6 +7,10 @@
         align-items: center;
         padding: 31px 0;
     }
+    &__wrapper-element-control {
+        display: flex;
+        gap: 20px;
+    }
 }
 
 .logo {
@@ -36,6 +40,14 @@
     &__list {
         display: flex;
         gap: 64px;
+
+        @media (max-width: 1024px) {
+            gap: 30px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        display: none;
     }
 }
 
@@ -98,5 +110,50 @@
     &--blog {
         bottom: -120px;
         height: 114px;
+    }
+}
+
+.burger {
+    display: none;
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(90deg, #0cbaf1, #fe69fe);
+    border-image-slice: 1;
+
+    &__line {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
+        display: block;
+        width: 16px;
+        height: 2px;
+        background-color: vars.$white;
+
+        &::after,
+        &::before {
+            content: "";
+            height: 2px;
+            background-color: vars.$white;
+            position: absolute;
+            right: 0;
+        }
+
+        &::before {
+            width: 20px;
+            top: -6px;
+        }
+
+        &::after {
+            width: 12px;
+            bottom: -6px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        display: block;
     }
 }
