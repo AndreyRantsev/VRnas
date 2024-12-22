@@ -12,9 +12,10 @@ const handlerEvent = (event) => {
 
     if (isBtn) {
         const menuItem = isBtn.closest("[data-menu-item]");
+
         const isActive = menuItem.classList.contains("active");
 
-        const openedSublist = header.querySelectorAll(".active");
+        const openedSublist = header.querySelectorAll("li.active");
         openedSublist.forEach((item) => {
             item.classList.remove("active");
         });
