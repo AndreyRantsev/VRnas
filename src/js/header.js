@@ -6,6 +6,8 @@ const handlerEvent = (event) => {
 
     if (isBurger) {
         isBurger.classList.toggle("active");
+        const menu = header.querySelector("#menu");
+        menu.classList.toggle("active");
     }
 
     if (isBtn) {
