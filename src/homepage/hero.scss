@@ -1,3 +1,4 @@
+@use "../base/vars.scss";
 .hero {
     max-width: 540px;
 
@@ -8,5 +9,34 @@
     .main-text {
         max-width: 446px;
         margin-bottom: 30px;
+    }
+}
+
+.invite {
+}
+.reviews {
+}
+.reviews__list {
+    display: flex;
+}
+.reviews__item {
+    background-size: cover;
+    width: 50.45px;
+    height: 50.45px;
+    border-radius: 50%;
+    border: 2px solid vars.$black100;
+
+    &--first {
+        background-image: url(../img/firstguy.jpg);
+    }
+
+    &--second {
+        background-image: url(../img/secondguy.jpg);
+        transform: translateX(-12px);
+    }
+
+    &--third {
+        background-image: url(../img/thirdguy.jpg);
+        transform: translateX(-24px);
     }
 }
