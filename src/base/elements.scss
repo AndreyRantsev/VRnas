@@ -40,12 +40,14 @@
     font-weight: 600;
     font-size: 64px;
     color: vars.$white;
+    line-height: 1.3;
 }
 
 .main-text {
     font-weight: 300;
     font-size: 16px;
     color: vars.$grey2;
+    line-height: 1.75;
 }
 
 .see-more-link {
@@ -57,6 +59,7 @@
     color: vars.$white;
     background: vars.$linear;
     cursor: pointer;
+    letter-spacing: 1.5px;
 
     &::after {
         content: "";
