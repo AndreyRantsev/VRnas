@@ -13,8 +13,14 @@
 }
 
 .invite {
+    padding-top: 42px;
+    display: flex;
+    align-items: center;
+    gap: 75px;
 }
 .reviews {
+    display: flex;
+    align-items: center;
 }
 .reviews__list {
     display: flex;
@@ -38,5 +44,29 @@
     &--third {
         background-image: url(../img/thirdguy.jpg);
         transform: translateX(-24px);
+    }
+}
+
+.reviews__text {
+    color: vars.$grey1;
+    font-weight: 300;
+}
+
+.reviews__amount {
+    position: relative;
+    font-weight: 600;
+    font-size: 16px;
+    color: vars.$white;
+    margin-right: 5px;
+    &::before {
+        content: "";
+        display: block;
+        width: 48px;
+        height: 8px;
+        background-image: url(../img/icons/gradient-line.svg);
+        background-repeat: no-repeat;
+        position: absolute;
+        left: -7px;
+        bottom: -3px;
     }
 }

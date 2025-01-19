@@ -1,0 +1,33 @@
+@use "../base/vars.scss";
+.video {
+    position: relative;
+    background-color: vars.$black50;
+    width: 196px;
+    height: 128px;
+    overflow: hidden;
+    &:hover {
+        cursor: pointer;
+        .video__preview {
+            transform: translate(-50%, -50%) scale(1.2);
+        }
+        .video__btn {
+            transform: translate(-50%, -50%) scale(1.2);
+        }
+    }
+}
+
+.video__preview {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.6s;
+}
+
+.video__btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s;
+}
