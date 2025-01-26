@@ -4,6 +4,13 @@
 
     .main-title {
         margin-bottom: 14px;
+
+        @media (max-width: 710px) {
+            font-size: 48px;
+        }
+        @media (max-width: 500px) {
+            font-size: 32px;
+        }
     }
 
     .main-text {
@@ -17,6 +24,14 @@
     display: flex;
     align-items: center;
     gap: 75px;
+
+    @media (max-width: 1050px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    @media (max-width: 710px) {
+        gap: 145px;
+    }
 }
 .reviews {
     display: flex;

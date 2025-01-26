@@ -28,11 +28,41 @@
         -ms-transform: translate(-50%, -50%) rotate(-30deg);
         transform: translate(-50%, -50%) rotate(-30deg);
     }
+
+    @media (max-width: 1200px) {
+        width: 425px;
+        height: 525px;
+    }
+
+    @media (max-width: 1050px) {
+        width: 354px;
+        height: 422px;
+        position: absolute;
+        bottom: 15%;
+        right: 0;
+    }
+
+    @media (max-width: 710px) {
+        bottom: -5%;
+        right: -20%;
+    }
+
+    @media (max-width: 500px) {
+        bottom: 3%;
+        right: -30%;
+        z-index: -1;
+    }
 }
 .avatar__img {
 }
 
 .welcome {
+    overflow: hidden;
+    padding-top: 80px;
+    margin-top: -80px;
+    .container {
+        padding-right: 0;
+    }
 }
 
 .welcome__content {
@@ -42,4 +72,14 @@
     align-items: center;
     max-width: 1201px;
     margin: 0 auto;
+
+    @media (max-width: 1050px) {
+        height: 780px;
+        position: relative;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    @media (max-width: 710px) {
+    }
 }
