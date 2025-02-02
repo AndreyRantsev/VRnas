@@ -20,11 +20,25 @@
         transparent 100%
     );
     border-image-slice: 1;
+
+    @media (max-width: 1050px) {
+        padding: 36px;
+        gap: 25px;
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
 }
 .list-reasons__item {
 }
 .reason-card {
     max-width: 324px;
+    @media (max-width: 768px) {
+        max-width: 100%;
+    }
 }
 .reason-card__img {
     margin-bottom: 42px;

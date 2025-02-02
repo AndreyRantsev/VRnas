@@ -32,14 +32,15 @@
     @media (max-width: 1200px) {
         width: 425px;
         height: 525px;
+        position: absolute;
+        bottom: -5%;
+        right: 0;
     }
 
     @media (max-width: 1050px) {
         width: 354px;
         height: 422px;
-        position: absolute;
-        bottom: 15%;
-        right: 0;
+        bottom: 0;
     }
 
     @media (max-width: 710px) {
@@ -47,8 +48,7 @@
         right: -20%;
     }
 
-    @media (max-width: 500px) {
-        bottom: 3%;
+    @media (max-width: 565px) {
         right: -30%;
         z-index: -1;
     }
@@ -73,11 +73,16 @@
     max-width: 1201px;
     margin: 0 auto;
 
-    @media (max-width: 1050px) {
-        height: 780px;
+    @media (max-width: 1200px) {
+        height: 550px;
         position: relative;
         flex-direction: column;
         overflow: hidden;
+        align-items: flex-start;
+    }
+
+    @media (max-width: 1050px) {
+        height: 680px;
     }
 
     @media (max-width: 710px) {
