@@ -1,0 +1,44 @@
+@use "../base/vars.scss";
+
+.choosing-reason {
+}
+.container {
+}
+.choosing-reason__content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.list-reason {
+    padding: 42px 64px 53px;
+    display: flex;
+    gap: 50px;
+    background-color: vars.$black50;
+    border: 1px solid transparent;
+    border-image: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.3) 0,
+        transparent 100%
+    );
+    border-image-slice: 1;
+}
+.list-reasons__item {
+}
+.reason-card {
+    max-width: 324px;
+}
+.reason-card__img {
+    margin-bottom: 42px;
+}
+
+.reason-card__title {
+    font-weight: 400;
+    font-size: 20px;
+    color: vars.$white;
+    margin-bottom: 12px;
+}
+.reason-card__text {
+    font-weight: 400;
+    font-size: 14px;
+    color: vars.$grey1;
+    line-height: 2;
+}
