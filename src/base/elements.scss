@@ -50,6 +50,33 @@
     line-height: 1.75;
 }
 
+.context-title {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    display: inline-block;
+    background: -webkit-gradient(
+        linear,
+        left top,
+        right top,
+        from(#0cbaf1),
+        to(#e95ce9)
+    );
+    background: -o-linear-gradient(left, #0cbaf1 0, #e95ce9 100%);
+    background: linear-gradient(90deg, #0cbaf1 0, #e95ce9 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.context-subtitle {
+    font-weight: 600;
+    font-size: 48px;
+    color: vars.$white;
+}
+
 .see-more-link {
     position: relative;
     display: inline-block;
