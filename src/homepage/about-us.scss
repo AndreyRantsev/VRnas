@@ -8,6 +8,12 @@
     justify-content: space-between;
     align-items: flex-end;
     padding: 120px 0 150px;
+    gap: 48px;
+
+    @media (max-width: 1080px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 .about-us-avatar {
     flex-shrink: 0;
@@ -50,6 +56,24 @@
         -ms-transform: translate(-50%, -50%) rotate(-30deg);
         transform: translate(-50%, -50%) rotate(-30deg);
     }
+
+    @media (max-width: 768px) {
+        width: 390px;
+        height: 468px;
+        &::before {
+            width: 300px;
+            height: 373px;
+        }
+    }
+
+    @media (max-width: 500px) {
+        width: 300px;
+        height: 370px;
+        &::before {
+            width: 250px;
+            height: 320px;
+        }
+    }
 }
 .about-us-avatar__img {
     position: absolute;
@@ -63,6 +87,11 @@
     bottom: -5%;
     right: 0;
     z-index: 3;
+
+    @media (max-width: 768px) {
+        width: 147px;
+        height: 96px;
+    }
 }
 
 .about-us-hero {
@@ -75,6 +104,10 @@
     }
     .main-text {
         margin-bottom: 24px;
+    }
+
+    @media (max-width: 1080px) {
+        max-width: 800px;
     }
 }
 

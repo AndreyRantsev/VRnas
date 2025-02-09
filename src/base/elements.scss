@@ -75,6 +75,10 @@
     font-weight: 600;
     font-size: 48px;
     color: vars.$white;
+
+    @media (max-width: 768px) {
+        font-size: 32px;
+    }
 }
 
 .see-more-link {
