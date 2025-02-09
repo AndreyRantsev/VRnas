@@ -6,3 +6,4 @@ import "../base/video.scss";
 import "../homepage/welcome.scss";
 import "./reasons.scss";
 import "./about-us.scss";
+import "./service.scss";

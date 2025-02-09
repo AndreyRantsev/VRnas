@@ -1,0 +1,66 @@
+@use "../base/vars.scss";
+.service {
+}
+.container {
+}
+.service__content {
+}
+.service__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 46px;
+    .main-text {
+        max-width: 625px;
+    }
+}
+.service__titles {
+    .context-title {
+        margin-bottom: 12px;
+    }
+}
+.context-subtitle {
+}
+.service-list {
+    display: flex;
+    gap: 36px;
+}
+.service-cards__item {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    &:nth-child(2) {
+        padding-top: 57px;
+    }
+
+    &:nth-child(3) {
+        padding-top: 135px;
+    }
+}
+.service-card {
+    width: 379px;
+    height: 291px;
+    padding: 38px 39px 25px 32px;
+    background-color: vars.$black50;
+    border: 1px solid transparent;
+    border-image: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.3) 0,
+        transparent 100%
+    );
+    border-image-slice: 1;
+}
+.service-card__icon {
+    margin-bottom: 60px;
+}
+.service-card__title {
+    font-weight: 400;
+    font-size: 20px;
+    color: vars.$white;
+    margin-bottom: 12px;
+}
+.service-card__text {
+    font-size: 14px;
+    color: vars.$grey1;
+    line-height: 2;
+}
