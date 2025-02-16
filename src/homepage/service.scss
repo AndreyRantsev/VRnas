@@ -50,9 +50,9 @@
         }
     }
 
-    // @media (max-width: 876px) {
-    //     flex-direction: column;
-    // }
+    @media (max-width: 876px) {
+        flex-direction: column;
+    }
 }
 .service-card {
     position: relative;
@@ -114,6 +114,10 @@
 
     @media (max-width: 1256px) {
         width: 100%;
+    }
+
+    @media (max-width: 876px) {
+        max-width: 663px;
     }
 }
 .service-card__icon {
