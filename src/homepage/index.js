@@ -7,3 +7,5 @@ import "../homepage/welcome.scss";
 import "./reasons.scss";
 import "./about-us.scss";
 import "./service.scss";
+import "./why-us.scss";
+import "./accordion.js";
