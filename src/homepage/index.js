@@ -9,3 +9,4 @@ import "./about-us.scss";
 import "./service.scss";
 import "./why-us.scss";
 import "./accordion.js";
+import "./how-to-start.scss";
