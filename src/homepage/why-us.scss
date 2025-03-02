@@ -28,13 +28,14 @@
 }
 
 .accordion-reasons__item {
+    cursor: pointer;
     position: relative;
     &:not(:last-child) {
         margin-bottom: 12px;
     }
     &.active {
         .accordion-reasons__title:after {
-            transform: translateY(-50%) rotateY(180deg);
+            transform: translateY(-50%) rotateX(180deg);
         }
         .accordion-reasons__wrapper-hidden {
             height: 0;
@@ -51,16 +52,17 @@
     color: vars.$white;
     border-bottom: 1px solid vars.$grey1;
     padding-bottom: 12px;
+    position: relative;
 
     &::after {
         content: "";
         position: absolute;
         top: 50%;
         right: 15px;
+        transform: translateY(-50%);
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        transform: translateX(-50%);
         display: block;
         height: 24px;
         width: 24px;
