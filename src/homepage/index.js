@@ -11,3 +11,4 @@ import "./why-us.scss";
 import "./accordion.js";
 import "./how-to-start.scss";
 import "./player.js";
+import "./testimonial.scss";
