@@ -152,7 +152,9 @@
     overflow: hidden;
 }
 .testimonial-btn__desc {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-image: url("../img/rectangle.webp");
     background-repeat: no-repeat;
     background-position: center;
