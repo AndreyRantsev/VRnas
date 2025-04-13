@@ -2,8 +2,8 @@
 .testimonial {
     max-width: 1247px;
     height: 1247px;
-    margin-top: 100px;
-    margin: 0 auto;
+    // padding-top: 100%;
+    margin: 100px auto 0;
     overflow: hidden;
     position: relative;
 }
@@ -30,8 +30,8 @@
         z-index: -1;
         top: 60%;
         left: 50%;
-        width: 642px;
-        height: 347px;
+        width: 500px;
+        height: 200px;
         background: -o-linear-gradient(
             351.46deg,
             rgba(28, 196, 249, 0.8) 0.72%,
@@ -75,7 +75,7 @@
     height: 78px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 105.99%;
     cursor: pointer;
     background-color: rgb(37, 37, 50, 60%);
     border-radius: 50%;
@@ -88,7 +88,7 @@
         background-image: url("../img/icons/color-gradientlinear.svg");
         background-repeat: no-repeat;
         background-position: center;
-        background-size: cover;
+        background-size: 105.99%;
         opacity: 0;
         transition: 0.5s;
     }
@@ -138,13 +138,43 @@
         border-radius: 50%;
         border: solid 1px black;
     }
+
+    &--first {
+        top: 13%;
+        left: 1%;
+    }
+
+    &--second {
+        top: 7%;
+        left: 57%;
+    }
+
+    &--third {
+        top: 29%;
+        left: 63%;
+    }
+
+    &--fourth {
+        top: 65%;
+        left: -5%;
+    }
+
+    &--fifth {
+        top: 58%;
+        left: 20%;
+    }
+
+    &--sixth {
+        top: 80%;
+        left: 40%;
+    }
 }
 
 .testimonial-btn__wrapper {
     display: block;
     position: absolute;
     top: 50%;
-    right: -300px;
+    right: -305px;
     height: 0;
     width: 297px;
     transform: translateY(-50%);
@@ -159,13 +189,13 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    width: 100%;
+    width: 105%;
     padding: 18px;
     height: 100%;
     text-align: left;
 }
 .testimonial-btn__text {
-    display: block;
+    display: inline-block;
     font-weight: 400;
     font-size: 12px;
     line-height: 20px;
@@ -173,7 +203,7 @@
     text-align: left;
 }
 .testimonial-btn__name {
-    // display: block;
+    display: inline-block;
     font-size: 12px;
     font-weight: 400;
     line-height: 2;
@@ -193,3 +223,5 @@
         height: 127px;
     }
 }
+
+// пофиксить градиентный бордер в шторку у name
