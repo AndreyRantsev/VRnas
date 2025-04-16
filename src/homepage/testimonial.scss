@@ -165,8 +165,8 @@
     }
 
     &--sixth {
-        top: 80%;
-        left: 40%;
+        top: 83%;
+        left: 35%;
     }
 }
 
@@ -212,6 +212,7 @@
     -o-border-image: linear-gradient(90deg, #0cbaf1, #fe69fe);
     border-image: linear-gradient(90deg, #0cbaf1, #fe69fe);
     border-image-slice: 1;
+    align-self: flex-start;
 }
 
 .testimonial-btn.active {
