@@ -23,6 +23,11 @@
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
+    z-index: -1;
+
+    @media (max-width: 1007px) {
+        width: 1007px;
+    }
 
     &::before {
         content: "";
@@ -50,6 +55,10 @@
         transform: translate(-50%, -50%) rotate(-30deg);
     }
 }
+
+.testimonial__wrapper-avatar {
+}
+
 .testimonial__header {
     text-align: center;
 }
@@ -59,17 +68,16 @@
 }
 
 .testimonial__avatar {
-    background-image: url("../img/testimonial__avatar.png");
-    width: 663px;
-    height: 483px;
+    width: 50%;
+    height: auto;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-45.5%, -59%);
+    transform: translate(-45.5%, -55%);
 }
 
 .testimonial-btn {
-    position: relative;
+    position: absolute;
     background-image: url("../img/icons/gradient-mono.svg");
     width: 78px;
     height: 78px;
@@ -77,8 +85,9 @@
     background-position: center;
     background-size: 105.99%;
     cursor: pointer;
-    background-color: rgb(37, 37, 50, 60%);
+    background-color: rgba(37, 37, 50, 60%);
     border-radius: 50%;
+    transition: 0.4s;
 
     &::before {
         content: "";
@@ -140,33 +149,37 @@
     }
 
     &--first {
-        top: 13%;
-        left: 1%;
+        top: 31%;
+        left: 15%;
     }
 
     &--second {
-        top: 7%;
+        top: 19%;
         left: 57%;
     }
 
     &--third {
-        top: 29%;
-        left: 63%;
+        top: 48%;
+        left: 76%;
     }
 
     &--fourth {
-        top: 65%;
-        left: -5%;
+        top: 75%;
+        left: 15%;
     }
 
     &--fifth {
-        top: 58%;
-        left: 20%;
+        top: 68%;
+        left: 43%;
     }
 
     &--sixth {
-        top: 83%;
-        left: 35%;
+        top: 84%;
+        left: 67%;
+
+        @media (max-width: 1254px) {
+            top: 82%;
+        }
     }
 }
 
@@ -180,6 +193,11 @@
     transform: translateY(-50%);
     transition: 0.5s;
     overflow: hidden;
+
+    @media (max-width: 500px) {
+        width: 250px;
+        right: -255px;
+    }
 }
 .testimonial-btn__desc {
     display: flex;
@@ -193,6 +211,9 @@
     padding: 18px;
     height: 100%;
     text-align: left;
+    @media (max-width: 500px) {
+        background-size: 250px 120px;
+    }
 }
 .testimonial-btn__text {
     display: inline-block;
@@ -215,6 +236,13 @@
     align-self: flex-start;
 }
 
+.testimonial-btn--third.active,
+.testimonial-btn--sixth.active {
+    @media (max-width: 1270px) {
+        left: 48%;
+    }
+}
+
 .testimonial-btn.active {
     &::before,
     &::after {
@@ -223,6 +251,8 @@
     .testimonial-btn__wrapper--first {
         height: 127px;
     }
-}
 
-// пофиксить градиентный бордер в шторку у name
+    @media (max-width: 768px) {
+        left: 2%;
+    }
+}

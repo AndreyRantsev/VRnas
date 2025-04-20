@@ -19,4 +19,4 @@ const clickHandler = (event) => {
     isBtn.classList.toggle("active");
 };
 
-testimonial.addEventListener("click", clickHandler);
+testimonial.addEventListener("click", (event) => clickHandler(event));
