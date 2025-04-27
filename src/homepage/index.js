@@ -13,3 +13,4 @@ import "./how-to-start.scss";
 import "./player.js";
 import "./testimonial.scss";
 import "./testimonial-script.js";
+import "./pricing.scss";
