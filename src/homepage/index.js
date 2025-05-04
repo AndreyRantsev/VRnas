@@ -14,3 +14,4 @@ import "./player.js";
 import "./testimonial.scss";
 import "./testimonial-script.js";
 import "./pricing.scss";
+import "./partners.scss";
