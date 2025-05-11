@@ -15,3 +15,4 @@ import "./testimonial.scss";
 import "./testimonial-script.js";
 import "./pricing.scss";
 import "./partners.scss";
+import "./articles.scss";
