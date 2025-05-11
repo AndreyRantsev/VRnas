@@ -65,39 +65,57 @@
     &--first {
         left: 2%;
         bottom: 19%;
+        animation: animate_grow 5s infinite;
     }
 
     &--second {
         left: 8%;
         bottom: 42%;
+        animation: animate_grow 4s infinite;
     }
 
     &--third {
         left: 22%;
         bottom: 60%;
+        animation: animate_grow 3s infinite;
     }
 
     &--fourth {
         left: 45.5%;
         bottom: 67%;
+        animation: animate_grow 6s infinite;
     }
 
     &--fifth {
         right: 22%;
         bottom: 60%;
+        animation: animate_grow 4s infinite;
     }
 
     &--sixth {
         right: 8%;
         bottom: 42%;
+        animation: animate_grow 3s infinite;
     }
 
     &--seventh {
         right: 2%;
         bottom: 19%;
+        animation: animate_grow 7s infinite;
     }
 }
 
+@keyframes animate_grow {
+    0% {
+        transform: scale(0.9);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(0.9);
+    }
+}
 .partner-logo {
     width: inherit;
     height: inherit;
